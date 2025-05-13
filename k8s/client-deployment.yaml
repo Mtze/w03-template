@@ -4,7 +4,7 @@ metadata:
   name: client
   namespace: canteen-app
 spec:
-  replicas: 2
+  replicas: 0
   selector:
     matchLabels:
       app: client
@@ -15,7 +15,8 @@ spec:
     spec:
       containers:
         - name: client
-          image: ghcr.io/aet-devops25/w03-template/client:latest
+          image: ghcr.io/aet-devops25/w03-solution/client:latest
+          imagePullPolicy: Always
           ports:
             - containerPort: 3000
           env:
