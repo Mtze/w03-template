@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: server
-          image: ghcr.io/mtze/w03-template/server:latest
+          image: ghcr.io/aet-devops25/w03-template/server:latest
           ports:
             - containerPort: 8080
           env:
